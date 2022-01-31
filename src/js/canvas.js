@@ -50,7 +50,8 @@ class Object {
 
 // Implementation
 let objects
-function init() {
+
+const init = () => {
   objects = []
 
   for (let i = 0; i < 400; i++) {
@@ -59,7 +60,7 @@ function init() {
 }
 
 // Animation Loop
-function animate() {
+const animate = () => {
   requestAnimationFrame(animate)
   c.clearRect(0, 0, canvas.width, canvas.height)
 

@@ -156,21 +156,21 @@ var _Object = /*#__PURE__*/function () {
 
 var objects;
 
-function init() {
+var init = function init() {
   objects = [];
 
   for (var i = 0; i < 400; i++) {// objects.push()
   }
-} // Animation Loop
+}; // Animation Loop
 
 
-function animate() {
+var animate = function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, canvas.width, canvas.height);
   c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y); // objects.forEach(object => {
   //  object.update()
   // })
-}
+};
 
 init();
 animate();
